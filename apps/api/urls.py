@@ -18,8 +18,4 @@ from django.contrib import admin
 from django.urls import path
 from .views import *
 
-urlpatterns = [
-    path("", Index.as_view(), name="index"),
-    path('users/', UserList.as_view()),
-    path('users/<int:pk>/', UserDetail.as_view()),
-]
+urlpatterns = []
